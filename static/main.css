@@ -7,7 +7,6 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
     margin: 0;
     padding: 0;
@@ -17,25 +16,80 @@ body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset,
     box-sizing: inherit;
 }
 
-
+/* Below are picture showcase elements */
 .show-pic{
     display:none;
     width:100%;
-    height:100%;
+    height:1500px;
     position:absolute;
-    background-color:rgba(55, 55, 55,0.70);
+    background-color:rgba(58, 57, 57, 0.79);
     z-index: 15;
 }
 
 .photodetail{
     display:none;
-    width:500px;
-    height:500px;
+    left:15%;
+    top:20%;
+    width:850px;
+    height:550px;
     position: fixed;
-    background-color: yellow;
+    background:#eee;
     z-index:20;
 }
 
+.arrow {
+    display:none;
+    width:20px;
+    height:38px;
+    position:fixed;
+    background:url("../img/instagram.png") 0 0 no-repeat;
+    z-index:16;
+}
+
+.left-arrow {
+    background-position:62% 77%;
+    top:45%;
+    left:10%;
+}
+
+.right-arrow {
+    background-position: 41% 77%;
+    top:45%;
+    right:10%;
+}
+
+.photodetail > img{
+    width:550px;
+    height:550px;
+}
+
+.photodetail > .sidebar {
+    width:300px;
+    height:550px;
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar > .sidebar-header{
+    display:flex;
+    padding-left:20px;
+    height:80px;
+    width:100%;
+    align-items: center;
+    border-bottom:1px solid grey;
+}
+.sidebar img{
+    margin-right:20px;
+    border-radius:70px;
+    width:50px;
+    height:50px;
+}
+
+.sidebar > .content {
+    width:100%;
+    height:350px;
+    padding-left:20px;
+}
 
 /* Below are css for instgram header */
 
@@ -84,11 +138,10 @@ body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset,
     display:flex;
     flex-direction:column;
     align-items:center;
-    /* border:1px solid red; */
     margin:30px auto;
 }
 
-div > #user-profile{
+#user-profile{
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -119,19 +172,17 @@ div > #user-profile{
 /* Below are Css for cute cats photos only!! */
 
 
-div > #users-photos{
+#users-photos{
     display:flex;
     flex-direction:column;
     width:1000px;
     height:100%;
-    /* background-color:paleturquoise; */
 }
 
 #users-photos > div {
     display:flex;
     width:1000px;
     height:300px;
-    /* background:green; */
     justify-content:space-between;
     align-items: center;
     margin:10px auto;
@@ -145,4 +196,21 @@ div > #users-photos{
 
 #users-photos > div > a:hover {
     opacity:0.7;
+}
+
+
+
+@media screen and (min-width:1350px) {
+    .photodetail{
+        left:30%;
+    }
+    .right-arrow{
+        right:1%;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    .right-arrow{
+        right:5%;
+    }
 }
