@@ -54,8 +54,23 @@ var photos = [
         url:'url("https://instagram.fatl1-1.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/21576433_1271617656277439_5911603757992378368_n.jpg") no-repeat center',
         link:"https://instagram.fatl1-1.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/21576433_1271617656277439_5911603757992378368_n.jpg",
         size:'310px 290px'
+    },
+    {
+        id:"8",
+        href:'#',
+        class:'photo8',
+        url:'url("https://scontent-atl3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/21435852_1022121734591391_100773917177675776_n.jpg") no-repeat center',
+        link:"https://scontent-atl3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/21435852_1022121734591391_100773917177675776_n.jpg",
+        size:'310px 290px'
+    },
+    {
+        id:"9",
+        href:'#',
+        class:'photo9',
+        url:'url("https://scontent-atl3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/19425517_141489556420914_4851330616425185280_n.jpg") no-repeat center',
+        link:"https://scontent-atl3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/19425517_141489556420914_4851330616425185280_n.jpg",
+        size:'310px 290px'
     }
-
     
 ];
 
@@ -100,7 +115,7 @@ for (let i=0; i<photos.length;i++){
 // Trying to toggle display element of the .show-pic using javascript
 
 var photo = document.querySelector('.photodetail');
-var photoExt=document.querySelector('.photodetail>img');
+var photoExt=photo.querySelector('img');
 var close = document.querySelector('.show-pic');
 var arrow = document.querySelectorAll('.arrow');
 close.addEventListener('click',function(event){
@@ -151,6 +166,4 @@ rightarrow.addEventListener('click',function(event){
             return photoExt.setAttribute('src',photos[f+1].link);
         }
     }
-
-
 })
