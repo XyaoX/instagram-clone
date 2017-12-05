@@ -1,0 +1,105 @@
+html, body{
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    background-color:#eee;
+    position:relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0;
+  }
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+.container{
+    width:100%;
+    height:100%;
+}
+
+.show-pic{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(55, 55, 55,0.70);
+    z-index: 15;
+}
+
+
+.navheader{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color:white;
+    height:70px;
+    width:100%;
+}
+
+.navheader > .navleft{
+    display:flex;
+    width:170px;
+    justify-content: space-around;
+}
+
+.navleft > a{
+    display:block;
+    height:36px;
+    background:url("../img/instagram.png") 0 0 no-repeat;
+}
+
+.navleft #logo{
+    width:34px;
+    background-position:46.5% 0%;
+}
+
+.navleft #logo-name {
+    width:112px;
+    background-position:81% 0%;
+}
+
+.navright{
+    display:flex;
+    width:120px;
+    justify-content: space-between;
+}
+
+#user-content {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border:1px solid red;
+    margin:30px auto;
+}
+
+div > #user-profile{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:1000px;
+    height:240px;
+}
+
+#user-profile > .user-data {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:600px;
+    height:190px;
+}
+
+.user-data > ul {
+    list-style: none;
+}
+
+.user-data > ul > li {
+    float:left;
+    margin-right:100px;
+}
